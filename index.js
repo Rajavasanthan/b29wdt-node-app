@@ -11,6 +11,7 @@ app.use(cors({
     origin: "*"
 }))
 
+
 app.get("/users", async function (req, res) {
     try {
         let connection = await mongoClient.connect(URL);
