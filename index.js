@@ -8,7 +8,7 @@ const URL = "mongodb+srv://admin:admin123@cluster0.ftngj.mongodb.net?retryWrites
 let usersList = [];
 app.use(express.json())
 app.use(cors({
-    origin: "http://localhost:3001"
+    origin: ["http://localhost:3001","https://b29wdt-node-app.herokuapp.com"]
 }))
 
 app.get("/users", async function (req, res) {
